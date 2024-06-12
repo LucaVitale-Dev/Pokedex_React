@@ -20,7 +20,7 @@ function Card({ pokemon }) {
     } else if (id < 100) {
       return "#0" + id;
     } else {
-      return id;
+      return "#" + id;
     }
   };
   //  //add 0/00 height pokemon
