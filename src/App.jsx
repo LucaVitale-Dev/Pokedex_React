@@ -4,6 +4,9 @@ import axios from "axios";
 import Card from "./components/Card";
 
 function App() {
+  console.log(
+    "Thank you for your time, visit https://www.lucavitalewebdeveloper.it/"
+  );
   //api call
   const apiUrl = "https://pokeapi.co/api/v2/pokemon?limit=151&offset=0";
   //all pokemon
