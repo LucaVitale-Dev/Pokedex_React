@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import axios from "axios";
 import Card from "./components/Card";
+import Footer from "./components/Footer";
 
 function App() {
   console.log(
@@ -34,6 +35,7 @@ function App() {
             <Card key={index} pokemon={pokemon} />
           ))}
       </div>
+      <Footer />
     </div>
   );
 }
