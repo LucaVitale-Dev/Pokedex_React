@@ -11,7 +11,7 @@ function Card({ pokemon }) {
       setSinglePokemon(data.data);
     };
     dataCall();
-  }, []);
+  }, [singlePokemon]);
 
   //add 0/00 id pokemon
   const addzero = (id) => {
