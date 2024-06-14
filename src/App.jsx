@@ -27,6 +27,7 @@ function App() {
     <div className=" h-screen font-Mont bg-[#323232] overflow-x-hidden w-screen">
       <Navbar setSearchTerm={setSearchTerm} />
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10 p-10">
+        {/* control pokemonList array */}
         {pokemonList
           .filter((pokemon) =>
             pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -34,6 +35,11 @@ function App() {
           .map((pokemon, index) => (
             <Card key={index} pokemon={pokemon} />
           ))}
+        {pokemonList.filter((pokemon) =>
+          pokemon.name.toLowerCase().includes(searchTerm.toLowerCase())
+        ).length === 0 && (
+          <p className=" font-bold text-white text-center">Pokemon not found</p>
+        )}
       </div>
       <Footer />
     </div>
