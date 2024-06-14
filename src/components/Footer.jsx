@@ -8,8 +8,9 @@ function Footer() {
       <h3 className=" font-bold text-white">
         I'm Luca Vitale, a junior web developer. <br />I developed this service
         using data provided by pokeapi.co. <br /> Visit my website at
+        <span> </span>
         <a
-          href=" https://www.lucavitalewebdeveloper.it"
+          href="  https://www.lucavitalewebdeveloper.it"
           className=" text-[#D3C580]"
         >
           https://www.lucavitalewebdeveloper.it
